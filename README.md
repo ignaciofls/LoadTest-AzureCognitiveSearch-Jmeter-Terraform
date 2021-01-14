@@ -154,9 +154,7 @@ Some screenshots here:
 
 ## JMeter Test Configuration
 
-The [sample.jmx](./jmeter/sample.jmx) includes some modules to configure the HTTP request, headers and body that Azure Cognitive Search is expecting. It also includes subsections to configure the query distribution (ie 10 concurrent users per second during 1 minute), a section to define which search terms will be sent (to avoid distortion in latencies thanks to cache) that read an input CSV. For more details and examples: [JMeter official doc](https://jmeter.apache.org/usermanual/component_reference.html).
-
-If you struggle adding new modules to the .jmx (the syntax can be quite tricky) I would suggest to use JMeter's UI and save the config to a temporary jmx file, analyze the new module and embed it in your jmx config file.
+For more detail on JMeter strategy definition and config file (.jmx) please browse [JMeter configuration](https://github.com/ignaciofls/LoadTest-AzureCognitiveSearch-Jmeter-Terraform/blob/main/jmeter/README.md)
 
 ## Pipeline Configuration
 
