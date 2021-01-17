@@ -1,6 +1,6 @@
 ## General tips on .jmx config file
 
-The [sample.jmx](./jmeter/sample.jmx) includes some modules to configure the HTTP request, headers and the body that Azure Cognitive Search is expecting. It also includes subsections to configure the query distribution (ie 10 concurrent users per second during 1 minute), a section to define which search terms will be sent (to avoid distortion in latencies thanks to cache) that read an input CSV. For more details and examples: [JMeter official doc](https://jmeter.apache.org/usermanual/component_reference.html).
+The [sample.jmx](./sample.jmx) includes some modules to configure the HTTP request, headers and the body that Azure Cognitive Search is expecting. It also includes subsections to configure the query distribution (ie 10 concurrent users per second during 1 minute), a section to define which search terms will be sent (to avoid distortion in latencies thanks to cache) that read an input CSV. For more details and examples: [JMeter official doc](https://jmeter.apache.org/usermanual/component_reference.html).
 
 If you struggle adding new modules to the .jmx (the syntax can be quite tricky) I would suggest to use JMeter's UI and save the config to a temporary jmx file, analyze the new module and embed it in your jmx config file. There is also an online editor to simplify drafting the test strategy: https://jmeter-plugins.org/editor/
 
@@ -78,10 +78,10 @@ In this case they are used to analyze the responses to our queries and extract o
 ## Examples
 
 ### Example 1: Simple test scenario, 3 requests per second over a minute
-[`sample.jmx`](./jmeter/sample.jmx)
+[`sample.jmx`](./sample.jmx)
 
 
 ### Example 2: Step growth scenario using "Concurrency Thread Group", ramp up towards 100 concurrent requests along 5 steps
-[`sample_steps.jmx`](./jmeter/sample_steps.jmx)
+[`sample_steps.jmx`](./sample_steps.jmx)
 
 More info on [Concurrency Thread Group Plugin](https://jmeter-plugins.org/wiki/ConcurrencyThreadGroup/)
